@@ -1,0 +1,17 @@
+{% extends "page.html" %} {% block content %}
+<h1>Welcome to the backend!</h1>
+
+<div>
+  <h2>Endpoints:</h2>
+  <ul>
+    <li><a href="/time">Time</a></li>
+  </ul>
+</div>
+
+<script>
+  const elements = document.querySelectorAll('a')
+  elements.forEach((element) => {
+    element.href = window.location.href + element.pathname
+  })
+</script>
+{% endblock %}

@@ -1,0 +1,12 @@
+v: 0
+app_name: starter
+micros:
+  - name: frontend
+    src: ./frontend/
+    engine: svelte-kit
+    primary: true
+
+  - name: backend
+    src: ./backend/
+    engine: python3.9
+    path: api
